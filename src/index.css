@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+html,
+body {
+  background-color: #e5e7eb; /* Equivalent to bg-gray-200 in Tailwind CSS */
+  min-height: 100vh;
+}
