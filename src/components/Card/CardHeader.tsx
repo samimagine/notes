@@ -36,6 +36,7 @@ const CardHeader = ({ title, onUpdate }: CardHeaderProps) => {
 
   return isEditing ? (
     <input
+      id="title"
       className="w-full text-lg font-bold border-b p-1 focus:outline-none"
       value={editedTitle}
       onChange={handleTitleChange}

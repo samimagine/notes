@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import FormattingToolbar from "./FormattingToolbar";
-import MentionsDropdown from "./MentionsDropDown";
+import MentionsDropdown from "./MentionsDropdown";
 import useMentions from "../../hooks/useMentions";
 import useDebounce from "../../hooks/useDebounce";
 
@@ -86,6 +86,7 @@ const CardEditor = ({
   return (
     <div>
       <input
+        id="card-editor-title"
         type="text"
         className="w-full text-lg font-bold border-b p-1 focus:outline-none mb-2"
         value={title}
@@ -97,6 +98,7 @@ const CardEditor = ({
       <FormattingToolbar styles={styles} onStyleChange={handleStyleChange} />
 
       <textarea
+        id="card-editor-content"
         ref={textareaRef}
         className={`w-full h-40 border p-2${styles.bold ? " font-bold" : ""}${
           styles.italic ? " italic" : ""

@@ -73,6 +73,7 @@ const CardContent = ({ content, styles = {}, onUpdate }: CardContentProps) => {
     <>
       {isEditing ? (
         <textarea
+          id="content"
           className="w-full h-20 border p-2 text-sm"
           value={editedContent}
           onChange={handleContentChange}
